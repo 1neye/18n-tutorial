@@ -8,13 +8,13 @@ const App = () => {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
-    console.log(language)
   };
   return (
     <>
       <button onClick={() => changeLanguage("en")}>EN</button>
       <button onClick={() => changeLanguage("ru")}>RU</button>
-      <div></div>
+      <div>{t("text")}</div>
+      <div>{t("hello")}</div>
     </>
   )
 }
